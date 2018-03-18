@@ -8,7 +8,7 @@ def generator():
 
     nationality = [' American', ' British', ' Norwegian']
 
-    fillers = [' Technical', ' Progressive', ' Avant Garde', ' Brutal', ' Folk', ' Viking', ' Pirate', ' Stoner',
+    fillers = [' Technical', ' Progressive', ' Avant-Garde', ' Brutal', ' Folk', ' Viking', ' Pirate', ' Stoner',
                ' Pagan', ' Power', ' Groove']
 
     enders = [' Death', ' Thrash', ' Doom', ' Sludge', ' Drone']
@@ -16,12 +16,16 @@ def generator():
     if x == 2:
         a = (random.choice(fillers))
         b = (random.choice(fillers))
+        while a == b:
+            b = (random.choice(fillers))
 
         genre = a + b
 
     if x == 3:
         a = (random.choice(fillers))
         b = (random.choice(fillers))
+        while a == b:
+            b = (random.choice(fillers))
         c = (random.choice(enders))
 
         genre = a + b + c
@@ -30,6 +34,8 @@ def generator():
         a = (random.choice(starters))
         b = (random.choice(fillers))
         c = (random.choice(fillers))
+        while b == c:
+            c = (random.choice(fillers))
         d = (random.choice(enders))
 
         genre = a + b + c + d
@@ -38,7 +44,11 @@ def generator():
         a = (random.choice(starters))
         b = (random.choice(fillers))
         c = (random.choice(fillers))
+        while b == c:
+            c = (random.choice(fillers))
         d = (random.choice(fillers))
+        while b == d or c == d:
+            d = (random.choice(fillers))
         e = (random.choice(enders))
 
         genre = genre = a + b + c + d + e
@@ -50,14 +60,24 @@ def generator():
             b = (random.choice(nationality))
             c = (random.choice(fillers))
             d = (random.choice(fillers))
+            while d == c:
+                d = (random.choice(fillers))
             e = (random.choice(fillers))
+            while c == e or d == e:
+                e = (random.choice(fillers))
             f = (random.choice(enders))
         else:
             a = (random.choice(starters))
             b = (random.choice(fillers))
             c = (random.choice(fillers))
+            while b == c:
+                c = (random.choice(fillers))
             d = (random.choice(fillers))
+            while b == d or c == d:
+                d = (random.choice(fillers))
             e = (random.choice(fillers))
+            while b == e or c == e or d == e:
+                e = (random.choice(fillers))
             f = (random.choice(enders))
 
         genre = genre = a + b + c + d + e + f
