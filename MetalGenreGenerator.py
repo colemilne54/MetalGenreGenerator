@@ -100,8 +100,7 @@ photo = PhotoImage(file = "C:/Users/Piraticus/Desktop/metal.png")
 label = Label(root, image=photo, borderwidth = 0, highlightthickness = 0)
 label.grid()
 
-printButton = Button(app, text = "Generate", width = 10, height = 2, command = generator) #(x = 500, y = 100)
-printButton.place(x = 500, y = 100)
+printButton = Button(app, text = "Generate", width = 10, height = 2, command = generator)
 printButton.grid()
 
 root.mainloop()
