@@ -1,9 +1,5 @@
 from tkinter import *
 import random
-#import colorama
-#from colorama import Fore, Back, Style
-
-#colorama.init()
 
 def generator():
     x = random.randint(2, 6)
@@ -66,9 +62,6 @@ def generator():
 
         genre = genre = a + b + c + d + e + f
 
-
-
-    #print(genre + ' Metal')
     complete = (genre + ' Metal')
 
     print = Label(root, text = complete)
@@ -90,11 +83,5 @@ label.grid()
 printButton = Button(app, text = "Generate", width = 10, height = 2, command = generator) #(x = 500, y = 100)
 printButton.place(x = 500, y = 100)
 printButton.grid()
-
-
-#label = Label(app, text = "This is a label!") print goes here?
-#label.grid()
-
-
 
 root.mainloop()
