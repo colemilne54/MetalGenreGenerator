@@ -91,13 +91,13 @@ root = Tk()
 
 root.title("Metal Genre Generator")
 root.geometry("1030x800")
-root.configure(background='black')
+root.configure(background = 'black')
 
 app = Frame(root)
 app.grid()
 
 photo = PhotoImage(file = "C:/Users/Piraticus/Desktop/metal.png")
-label = Label(root, image=photo, borderwidth = 0, highlightthickness = 0)
+label = Label(root, image = photo, borderwidth = 0, highlightthickness = 0)
 label.grid()
 
 printButton = Button(app, text = "Generate", width = 10, height = 2, command = generator)
