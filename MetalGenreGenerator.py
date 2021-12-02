@@ -96,7 +96,7 @@ root.configure(background = 'black')
 app = Frame(root)
 app.grid()
 
-photo = PhotoImage(file = "C:/Users/Piraticus/Desktop/metal.png")
+photo = PhotoImage(file = "./metal.png")
 label = Label(root, image = photo, borderwidth = 0, highlightthickness = 0)
 label.grid()
 
